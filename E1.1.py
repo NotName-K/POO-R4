@@ -10,6 +10,7 @@ class Shape:
 
 class Rectangle(Shape):
     def __init__(self, length, width):
+        super().__init__()
         self.length = length
         self.width = width
 
@@ -20,8 +21,10 @@ class Rectangle(Shape):
     def compute_perimeter(self):
         perimeter = 2 * (self.length) + 2 * (self.width)
         return perimeter
+
 class square(Shape):
     def __init__(self, side):
+        super().__init__()
         self.side = side
 
     def compute_area(self):
