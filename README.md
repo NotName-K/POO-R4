@@ -16,6 +16,7 @@ class Shape:   ## Superclase
 
 class Rectangle(Shape):    # Clase Rectangulo
     def __init__(self, length, width):
+        super().__init__()
         self.length = length
         self.width = width
 
@@ -29,6 +30,7 @@ class Rectangle(Shape):    # Clase Rectangulo
 
 class square(Shape):    # Clase Caudrado 
     def __init__(self, side):
+        super(),__init__()
         self.side = side
         
     def compute_area(self):  # Area del cuadrado
